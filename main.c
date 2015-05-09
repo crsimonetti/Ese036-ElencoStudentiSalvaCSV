@@ -19,6 +19,25 @@ struct s_studente {
 typedef struct s_studente studente;
 
 int main(int argc, char** argv) {
+    FILE *puntafile;
+    studente elenco;
+    int i;
+    puntafile=fopen(FNAME, "w");
+    
+            fprintf(puntafile, "Nome;Cognome;Eta';Classe\n");
+        for (i=0;i<N;i++) {
+            printf("Studente %d:\n", i+1);
+            printf("Nome: ");
+            scanf("%s", elenco.nome);
+            printf("Cognome: ");
+            scanf("%s", elenco.cognome);
+            printf("Eta': ");
+            scanf("%d", &elenco.eta);
+            printf("Classe: ");
+            scanf("%s", elenco.classe);
+                fprintf(puntafile, "%s;%s;%d;%s\n", elenco.nome, elenco.cognome, elenco.eta, elenco.classe);
+        }
+        fclose(puntafile);
     
     return (EXIT_SUCCESS);
 }

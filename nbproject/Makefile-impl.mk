@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Ese036-ElencoStudentiSalvaCSV
+PROJECTNAME=SalvaCSV
 
 # Active Configuration
 DEFAULTCONF=Debug
